@@ -1,0 +1,24 @@
+# Measurement configuration file for QCoDeS Tutorial.ipynb
+
+database: C:\Data\20260911\tutorial.db
+export_dir: C:\Data\20260911\exports
+
+experiment_name: QCoDeS_Tutorial
+sample_name: demo_sample
+
+instruments:
+    lockin:
+        driver: qcodes.instrument_drivers.stanford_research.SR860
+        address: GPIB0::4::INSTR
+        settings:
+            frequency: 17.777       # Hz
+            amplitude: 0.1          # V
+            time_constant: 0.1      # s
+            sensitivity: 0.01       # V
+            input_config: a         # 'a' or 'a-b'
+            input_coupling: ac
+            input_shield: ground
+
+measurement:
+    duration: 10.0                   # s
+    sample_interval: 0.1            # s
