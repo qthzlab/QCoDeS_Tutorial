@@ -19,5 +19,10 @@ instruments:
             input_shield: ground
 
 measurement:
-    duration: 100.0                 # s
+    duration: 5.0                 # s
     sample_interval: 0.5            # s
+
+buffer:
+    capture_config: "X,Y"        # or "X,Y,R,P"
+        
+        
