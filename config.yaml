@@ -19,5 +19,5 @@ instruments:
             input_shield: ground
 
 measurement:
-    duration: 10.0                   # s
-    sample_interval: 0.1            # s
+    duration: 100.0                 # s
+    sample_interval: 0.5            # s
