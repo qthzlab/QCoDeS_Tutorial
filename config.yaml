@@ -8,7 +8,6 @@ sample_name: demo_sample
 
 instruments:
     lockin:
-        driver: qcodes.instrument_drivers.stanford_research.SR860
         address: GPIB0::4::INSTR
         settings:
             frequency: 17.777       # Hz
